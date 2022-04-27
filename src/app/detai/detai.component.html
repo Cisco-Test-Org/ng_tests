@@ -1,0 +1,7 @@
+<hr>
+<label>Enter Item</label>
+<input type="text" class="form-control" [(ngModel)]="itemName">
+<button class="btn btn-primary" (click)="onAddItem()">Add Item</button>
+<!-- <ol><li *ngFor="let item of itemList" ><p [ngClass]="{p: count > 5}">{{ item }}</p></li></ol> -->
+<!-- <ol><li *ngFor="let item of itemList" ><p [ngStyle]="{color: (count > 5) ? 'red' : 'black'}">{{ item }}</p></li></ol> -->
+<ol><li *ngFor="let item of itemList; let i = index" ><p [ngStyle]="{color: (i >= 5) ? 'red' : 'black'}">{{ item }}</p></li></ol>

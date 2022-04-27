@@ -1,0 +1,7 @@
+<hr>
+<label>Enter Username</label>
+<input type="text" class="form-control" [(ngModel)]="userName">
+<button class="btn btn-danger" (click)="userName = ''" [disabled]="userName == ''">Reset</button>
+<p>{{ userName }}</p>
+
+
